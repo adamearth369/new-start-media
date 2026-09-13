@@ -1,9 +1,49 @@
-/* New Start Media — lead form logic.
- * - Client-side validation with accessible error messaging
- * - Honeypot + time-on-page bot guards
- * - Submits to Web3Forms (config.js) via fetch
- * - Deterministic success state
+/* New Start Media — site behavior.
+ * - Mobile nav toggle
+ * - Scroll-reveal on section entry (skipped for prefers-reduced-motion)
+ * - Lead form: client-side validation, honeypot + time-on-page bot guards,
+ *   submits to Web3Forms (config.js) via fetch, deterministic success state
  */
+(function () {
+  "use strict";
+
+  var navToggle = document.getElementById("nav-toggle");
+  var mobileNav = document.getElementById("mobile-nav");
+  if (navToggle && mobileNav) {
+    navToggle.addEventListener("click", function () {
+      var isOpen = navToggle.getAttribute("aria-expanded") === "true";
+      navToggle.setAttribute("aria-expanded", String(!isOpen));
+      mobileNav.hidden = isOpen;
+    });
+    mobileNav.addEventListener("click", function (e) {
+      if (e.target.tagName === "A") {
+        mobileNav.hidden = true;
+        navToggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
+  if (window.matchMedia && !window.matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window) {
+    var revealTargets = document.querySelectorAll(".reveal");
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -60px 0px" }
+    );
+    revealTargets.forEach(function (el) { observer.observe(el); });
+  } else {
+    document.querySelectorAll(".reveal").forEach(function (el) {
+      el.classList.add("is-visible");
+    });
+  }
+})();
+
 (function () {
   "use strict";
 

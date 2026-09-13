@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://adamearth369.github.io/new-start-media/sitemap.xml
+Sitemap: https://newstartmedia.ca/sitemap.xml
