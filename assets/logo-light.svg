@@ -1,9 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" role="img" aria-label="New Start Media">
-  <g transform="translate(10,10) scale(0.83)">
-    <path fill="#a9824f" d="M60,13 C34,32 24,54 33,90 C40,78 48,58 55,42 C58,34 59,23 60,13 Z"/>
-    <path fill="#cfa86b" d="M60,13 C86,32 96,54 87,90 C80,78 72,58 65,42 C62,34 61,23 60,13 Z"/>
-    <line x1="22" y1="90" x2="98" y2="90" stroke="#a9824f" stroke-width="2.25" stroke-linecap="round"/>
-    <circle cx="60" cy="90" r="4" fill="#cfa86b"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 140" role="img" aria-label="New Start Media">
+  <defs>
+    <linearGradient id="champagneLeft" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#B98C70"/>
+      <stop offset="100%" stop-color="#D7B49A"/>
+    </linearGradient>
+    <linearGradient id="champagneRight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E5C3AA"/>
+      <stop offset="100%" stop-color="#B78A6B"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(10,10) scale(0.3529)">
+    <path d="M45 280 L210 40 L210 105 L45 280 Z" fill="url(#champagneLeft)"/>
+    <path d="M210 40 L375 280 L210 105 Z" fill="url(#champagneRight)"/>
+    <line x1="78" y1="280" x2="342" y2="280" stroke="#C99F84" stroke-width="5.7" stroke-linecap="round"/>
+    <circle cx="210" cy="280" r="11" fill="#C99F84"/>
   </g>
-  <text x="142" y="71" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="600" letter-spacing="6" fill="#f6f4ee">NEW START MEDIA</text>
+  <text x="188" y="90" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="400" letter-spacing="7" fill="#f6f4ee">NEW START MEDIA</text>
 </svg>
