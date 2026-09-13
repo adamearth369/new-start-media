@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 108" role="img" aria-label="New Start Media symbol">
+  <path fill="#a9824f" d="M60,13 C34,32 24,54 33,90 C40,78 48,58 55,42 C58,34 59,23 60,13 Z"/>
+  <path fill="#cfa86b" d="M60,13 C86,32 96,54 87,90 C80,78 72,58 65,42 C62,34 61,23 60,13 Z"/>
+  <line x1="22" y1="90" x2="98" y2="90" stroke="#a9824f" stroke-width="2.25" stroke-linecap="round"/>
+  <circle cx="60" cy="90" r="4" fill="#cfa86b"/>
+</svg>

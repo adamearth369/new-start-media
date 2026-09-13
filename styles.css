@@ -136,14 +136,29 @@ img, svg { max-width: 100%; }
   padding: 16px 0;
 }
 .brand-word {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-family: var(--font-display);
-  font-size: 1.2rem;
+  font-size: 1.08rem;
   font-weight: 600;
   letter-spacing: -0.01em;
   color: var(--navy);
   text-decoration: none;
+  white-space: nowrap;
+  flex: none;
 }
 .brand-word span { color: var(--accent); font-style: italic; }
+.brand-mark {
+  width: 20px;
+  height: 18px;
+  flex: none;
+}
+
+@media (min-width: 400px) {
+  .brand-word { font-size: 1.2rem; gap: 9px; }
+  .brand-mark { width: 22px; height: 20px; }
+}
 
 .main-nav {
   display: none;
@@ -190,6 +205,13 @@ img, svg { max-width: 100%; }
   white-space: nowrap;
 }
 .header-cta:hover { background: var(--navy-soft); }
+
+@media (max-width: 419px) {
+  /* Only hide the persistent CTA where a mobile-menu fallback exists
+     (it's the last item there) — pages without one (e.g. privacy/)
+     keep it, so "Book a Review" is never unreachable from the header. */
+  .site-header:has(.mobile-nav) .header-cta { display: none; }
+}
 
 .mobile-nav {
   border-top: 1px solid var(--line);
@@ -817,7 +839,15 @@ button[type="submit"]:disabled { opacity: 0.65; cursor: progress; }
 .site-footer a { color: var(--on-navy); text-decoration: none; }
 .site-footer a:hover { text-decoration: underline; }
 .footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
-.footer-brand { color: var(--on-navy); font-weight: 700; font-family: var(--font-display); }
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--on-navy);
+  font-weight: 700;
+  font-family: var(--font-display);
+}
+.footer-mark { width: 18px; height: 16px; flex: none; }
 
 /* ---------- Privacy / simple content page ---------- */
 
