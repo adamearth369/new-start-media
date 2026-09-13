@@ -77,12 +77,14 @@ python -m http.server 8000
 # open http://localhost:8000
 ```
 
-## Deployment (Render Static Site)
+## Deployment (GitHub Pages)
 
-Auto-deploys from the `main` branch. No build step; publish directory is the
-repo root.
+Deployed via GitHub Pages, serving directly from the `main` branch (root).
+No build step, no GitHub Actions workflow required.
+
+Live at: <https://adamearth369.github.io/new-start-media/>
 
 No custom domain is owned/confirmed for New Start Media yet — `canonical`,
 Open Graph, `sitemap.xml`, and `robots.txt` all currently point at the
-generated `*.onrender.com` URL. Once a domain is purchased and connected,
-update those four references to the real domain.
+GitHub Pages URL above. Once a domain is purchased and connected, update
+those four references to the real domain.

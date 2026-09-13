@@ -5,13 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Page not found | New Start Media</title>
   <meta name="robots" content="noindex">
-  <link rel="stylesheet" href="/styles.css">
+  <!-- 404.html can be served for a request at any depth (e.g.
+       /new-start-media/some/broken/path), so — unlike every other page —
+       its asset/link paths must be absolute to this site's known base path,
+       not relative to the current directory. -->
+  <link rel="stylesheet" href="/new-start-media/styles.css">
 </head>
 <body>
   <main class="wrap" style="padding:60px 20px;text-align:center">
     <h1>Page not found</h1>
     <p class="lede" style="margin:0 auto 24px">The page you were looking for isn&rsquo;t here.</p>
-    <p><a class="btn-primary" href="/">Go to the homepage</a></p>
+    <p><a class="btn-primary" href="/new-start-media/">Go to the homepage</a></p>
   </main>
 </body>
 </html>

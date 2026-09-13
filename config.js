@@ -1,5 +1,5 @@
 /* New Start Media — site configuration.
- * Nothing here is a secret. Edit the values, commit, and Render redeploys.
+ * Nothing here is a secret. Edit the values, commit, and GitHub Pages redeploys.
  * -------------------------------------------------------------------------
  * FORM DELIVERY (Web3Forms):
  *   1. Go to https://web3forms.com
