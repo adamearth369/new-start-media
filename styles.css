@@ -138,7 +138,7 @@ img, svg { max-width: 100%; }
 .brand-word {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   font-family: var(--font-display);
   font-size: 1.08rem;
   font-weight: 600;
@@ -150,14 +150,14 @@ img, svg { max-width: 100%; }
 }
 .brand-word span { color: var(--accent); font-style: italic; }
 .brand-mark {
-  width: 20px;
-  height: 18px;
+  width: 26px;
+  height: 23px;
   flex: none;
 }
 
 @media (min-width: 400px) {
-  .brand-word { font-size: 1.2rem; gap: 9px; }
-  .brand-mark { width: 22px; height: 20px; }
+  .brand-word { font-size: 1.2rem; gap: 11px; }
+  .brand-mark { width: 29px; height: 26px; }
 }
 
 .main-nav {
